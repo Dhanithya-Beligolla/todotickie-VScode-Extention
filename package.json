@@ -15,10 +15,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:todo.addTask",
-    "onView:todoTasks"
-  ],
+  
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -32,16 +29,34 @@
         "icon": "$(refresh)"
       }
     ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "todotickie",
+          "title": "TodoTickie",
+          "icon": "resources/todotickie.png"
+        }
+      ]
+    },
     "views": {
       "explorer": [
         {
           "id": "todoTasks",
-          "name": "Todo Tasks"
+          "name": "Todo Tasks",
+          "icon": "resources/todotickie.png"
+        }
+      ],
+      "todotickie": [
+        {
+          "type": "webview",
+          "id": "todotickie.sidebar",
+          "name": "Todos",
+          "icon": "resources/todotickie.png"
         }
       ]
     },
     "menus": {
-      "view/title": [
+  "view/title": [
         {
           "command": "todo.refresh",
           "when": "view == todoTasks",
