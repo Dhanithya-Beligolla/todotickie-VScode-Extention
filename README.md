@@ -1,31 +1,53 @@
 # TodoTickie: Simple Todo List Extension for VS Code
 
-TodoTickie is a lightweight VS Code extension that allows users to add tasks with due dates, view them in a tree view in the Explorer sidebar, and manage a basic todo list persisted across sessions.
+TodoTickie is a lightweight VS Code extension that lets you add tasks with due dates, view and manage them in a dedicated sidebar, and keep a quick list in the Explorer view. Data is stored in VS Code's global state and persists across sessions.
 
 ## Features
-- Add tasks with custom names and due dates via the Command Palette ("Add Todo Task").
-- Display tasks in a dedicated "Todo Tasks" view.
-- Refresh the list manually.
-- Tasks are stored in VS Code's global state for persistence.
+- Sidebar panel to add, view, and manage todos (Activity Bar → TodoTickie)
+	- Add tasks with a description and due date
+	- Toggle complete/incomplete
+	- Edit task description and due date
+	- Delete tasks
+	- Filter by All / Active / Completed
+	- Clear all completed tasks
+- Explorer view tree ("Todo Tasks") that stays in sync
+- Optional Command Palette command ("Add Todo Task") to add quickly
+- Tasks are stored in VS Code's global state for persistence
 
 ## Installation
 1. Download the `.vsix` file from the [Releases](https://github.com/Dhanithya-Beligolla/todotickie-VScode-Extention) page (or install from VS Code Marketplace once published).
-2. In VS Code, go to Extensions view (Ctrl+Shift+X), click the "..." menu, and select "Install from VSIX...".
+2. In VS Code, go to Extensions view (Cmd+Shift+X on macOS / Ctrl+Shift+X on Windows/Linux), click the "..." menu, and select "Install from VSIX...".
 3. Select the downloaded file.
 
 ## Usage
-- Open Command Palette (Ctrl+Shift+P) and type "Add Todo Task".
-- Enter task name and due date (e.g., YYYY-MM-DD).
-- View tasks in the Explorer sidebar under "Todo Tasks".
-- Use the refresh icon to update the view.
+Two ways to work with your todos:
+
+1) Sidebar panel (recommended)
+- Open the TodoTickie view from the Activity Bar (left vertical icon bar).
+- Use the form to add a task and due date.
+- Manage tasks inline: toggle complete, edit, delete, filter, and clear completed.
+
+2) Explorer view
+- See a read-only list under "Todo Tasks" in the Explorer.
+- Use the "Refresh" button in the view title to update if needed.
+
+Command Palette
+- Press Cmd+Shift+P / Ctrl+Shift+P → "Add Todo Task" to add a task quickly.
 
 ## Extension Settings
-This extension contributes no settings yet, but future updates may include customization options.
+No settings yet. Planned options include default filters and due date formatting.
 
 ## Known Issues
-- No editing or deletion of tasks (planned for future releases).
+- No reminders/notifications.
+- No sorting options yet; tasks show in the order added.
+- Due date format is not strictly validated beyond the UI input.
 
 ## Release Notes
+### 0.1.0
+- New TodoTickie sidebar panel with add/edit/delete/toggle, filters, and clear completed.
+- Explorer tree view remains and stays in sync.
+- Data model update with migration to include ids and completed state.
+
 ### 0.0.1
 Initial release with basic add and view functionality.
 
