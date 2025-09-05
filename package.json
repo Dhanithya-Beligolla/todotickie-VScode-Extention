@@ -3,6 +3,7 @@
   "displayName": "TodoTickie",
   "description": "A simple todo list extension for VS Code dated tasks",
   "version": "0.0.1",
+  "publisher": "todotickie",
   "license": "MIT",
   "repository": {
     "type": "git",
