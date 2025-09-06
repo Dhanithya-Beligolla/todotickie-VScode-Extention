@@ -37,7 +37,7 @@ Command Palette
 ## Extension Settings
 No settings yet. Planned options include default filters and due date formatting.
 
-## Known Issues
+## Future Releases
 - Reminders show one toast per item per day (no snooze/recurring scheduling yet).
 - Sorting applies globally for now (no per-view overrides).
 - Date validation accepts only YYYY-MM-DD; timezones aren’t handled explicitly.
