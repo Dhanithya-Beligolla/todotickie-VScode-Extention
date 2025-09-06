@@ -38,11 +38,16 @@ Command Palette
 No settings yet. Planned options include default filters and due date formatting.
 
 ## Known Issues
-- No reminders/notifications.
-- No sorting options yet; tasks show in the order added.
-- Due date format is not strictly validated beyond the UI input.
+- Reminders show one toast per item per day (no snooze/recurring scheduling yet).
+- Sorting applies globally for now (no per-view overrides).
+- Date validation accepts only YYYY-MM-DD; timezones aren’t handled explicitly.
 
 ## Release Notes
+### 0.2.0
+- Sorting: due date, created order, and name; persists across sessions.
+- Date validation on add/edit (YYYY-MM-DD) and overdue/today highlighting.
+- Reminders: daily toast for due-today and overdue items (one per item per day).
+
 ### 0.1.0
 - New TodoTickie sidebar panel with add/edit/delete/toggle, filters, and clear completed.
 - Explorer tree view remains and stays in sync.
