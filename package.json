@@ -2,7 +2,7 @@
   "name": "todotickie",
   "displayName": "TodoTickie",
   "description": "A simple todo list extension for VS Code dated tasks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "todotickie",
   "license": "MIT",
   "repository": {
@@ -15,7 +15,6 @@
   "categories": [
     "Other"
   ],
-  
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -56,7 +55,7 @@
       ]
     },
     "menus": {
-  "view/title": [
+      "view/title": [
         {
           "command": "todo.refresh",
           "when": "view == todoTasks",
