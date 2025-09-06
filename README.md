@@ -15,7 +15,7 @@ TodoTickie is a lightweight VS Code extension that lets you add tasks with due d
 - Tasks are stored in VS Code's global state for persistence
 
 ## Installation
-1. Download the `.vsix` file from the [Releases](https://github.com/Dhanithya-Beligolla/todotickie-VScode-Extention) page (or install from VS Code Marketplace once published).
+1. Download the `.vsix` file from the [Releases](https://github.com/Dhanithya-Beligolla/todotickie-VScode-Extention/releases) page (or install from VS Code Marketplace once published).
 2. In VS Code, go to Extensions view (Cmd+Shift+X on macOS / Ctrl+Shift+X on Windows/Linux), click the "..." menu, and select "Install from VSIX...".
 3. Select the downloaded file.
 
