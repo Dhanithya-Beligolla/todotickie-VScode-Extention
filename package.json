@@ -33,7 +33,7 @@
         {
           "id": "todotickie",
           "title": "TodoTickie",
-          "icon": "resources/todotickie.png"
+          "icon": "resources/todo.svg"
         }
       ]
     },
@@ -42,7 +42,7 @@
         {
           "id": "todoTasks",
           "name": "Todo Tasks",
-          "icon": "resources/todotickie.png"
+          "icon": "resources/todo.svg"
         }
       ],
       "todotickie": [
@@ -50,7 +50,7 @@
           "type": "webview",
           "id": "todotickie.sidebar",
           "name": "Todos",
-          "icon": "resources/todotickie.png"
+          "icon": "resources/todo.svg"
         }
       ]
     },
